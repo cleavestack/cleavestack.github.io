@@ -349,12 +349,12 @@
       <div class="card">
         <span class="k">01 · Monolith speed</span>
         <h3>A running app in one command</h3>
-        <p>One template scaffolds a warning-free solution: DDD aggregates, CQRS with a decorator pipeline, a transactional outbox, and Aspire orchestration, all wired. Fifteen packages, one lockstep version.</p>
+        <p>One template scaffolds a warning-free solution: DDD aggregates, CQRS with a decorator pipeline, a transactional outbox, and Aspire orchestration, all wired. Every package ships at one lockstep version.</p>
       </div>
       <div class="card">
         <span class="k">02 · Enforced discipline</span>
         <h3>Boundaries that fail the build</h3>
-        <p>Module isolation is not a convention on a wiki. Ninety-three architecture fitness tests and a compile-time layer guard reject the violating commit. Seventy ADRs record why every rule exists.</p>
+        <p>Module isolation is not a convention on a wiki. Architecture fitness tests and a compile-time layer guard reject the violating commit, and an ADR records why every rule exists.</p>
       </div>
       <div class="card">
         <span class="k">03 · The exit, built in</span>
@@ -367,9 +367,9 @@
 
 <div class="proof">
   <div class="wrap proof-inner" role="list" aria-label="Proof points">
-    <div class="stat" role="listitem"><div class="n">15</div><div class="l">NuGet packages, lockstep-released</div></div>
-    <div class="stat" role="listitem"><div class="n">70</div><div class="l">Architecture Decision Records</div></div>
-    <div class="stat" role="listitem"><div class="n">93</div><div class="l">Fitness tests that gate the build</div></div>
+    <div class="stat" role="listitem"><div class="n">1</div><div class="l">Lockstep version across every package</div></div>
+    <div class="stat" role="listitem"><div class="n">0</div><div class="l">Warnings in a fresh scaffold</div></div>
+    <div class="stat" role="listitem"><div class="n">5</div><div class="l">Analyzers at error severity</div></div>
     <div class="stat" role="listitem"><div class="n">3</div><div class="l">Reference apps, one in production</div></div>
     <div class="stat" role="listitem"><div class="n"><span class="accent">Apache 2.0</span></div><div class="l">Open source, no strings</div></div>
   </div>
@@ -386,7 +386,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;--module Orders --aggregate Order<br>
         <span class="ok">✓</span> 12 projects, 5 layers, 0 warnings<br>
         <span class="p">$</span> dotnet test --solution Contoso.Support.slnx<br>
-        <span class="ok">✓</span> passed, including 93 architecture rules<br>
+        <span class="ok">✓</span> passed, including the architecture rules<br>
         <span class="p">$</span> <span class="c"># years later, when Orders needs to scale:</span><br>
         <span class="p">$</span> <span class="c"># move the module behind the gateway.</span><br>
         <span class="p">$</span> <span class="c"># domain code untouched.</span>
@@ -443,9 +443,9 @@
         </div>
       </div>
       <ul class="oss-facts">
-        <li><span class="tick">✓</span> Fifteen packages on nuget.org, credential-free install</li>
+        <li><span class="tick">✓</span> Every package on nuget.org, credential-free install</li>
         <li><span class="tick">✓</span> Three reference apps, from minimal seed to four-service production deploy</li>
-        <li><span class="tick">✓</span> Seventy ADRs: the why behind every pattern</li>
+        <li><span class="tick">✓</span> An ADR behind every pattern: the why, written down</li>
         <li><span class="tick">✓</span> Public architecture scorecards, gaps included</li>
         <li><span class="tick">✓</span> .NET 10, C# 14, Aspire, EF Core, Blazor, MAUI</li>
       </ul>
